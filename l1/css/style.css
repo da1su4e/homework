@@ -1,0 +1,79 @@
+body {
+   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+   /* ffa */
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.wrap {
+   background: url(../img/1920-x-1080-night-city-skyscrapers-5z0me7dw4nb20bf1.jpg) no-repeat center/cover;
+   height: 100vh;
+}
+
+.header {
+   color: #fff;
+   font-size: 24px;
+   display: flex;
+   height: 50px;
+   padding: 0 20px;
+   gap: 10px;
+}
+
+.menu__button {
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   position: relative;
+   transition: transform 0.3s ease;
+   z-index: 10;
+   cursor: pointer;
+}
+
+.menu__button.active {
+   transform: translateX(250px);
+}
+
+.modal__burger_menu {
+   position: fixed;
+   top: 0;
+   left: -250px;
+   width: 250px;
+   height: 100%;
+   background-color: rgb(50, 50, 50);
+   transition: left 0.3s ease;
+   z-index: 5;
+}
+
+.modal__burger_menu.active {
+   left: 0;
+}
+
+.modal__burger_menu ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+}
+
+a {
+   text-decoration: none;
+   color: #fff;
+}
+
+.burger__li{
+   padding: 10px 20px;
+   border-top: 1px solid #424242e3;
+   border-bottom: 1px solid #424242e3;
+   width: 210px;
+}
+
+.close__button {
+   padding: 10px 20px;
+}
+
+.burger__li.active {
+   background-color: #424242e3;
+   transition: all 0.3s ease;
+}
